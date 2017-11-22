@@ -6,6 +6,10 @@
   <!-- Enable responsiveness on mobile devices-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
 
+{%if site.facebook.app_id %}
+  <meta property="fb:app_id" content="{{ site.facebook.app_id }}" />
+{%endif %}
+
   <title>
     {% if page.title == "Home" %}
       {{ site.title }} &middot; {{ site.tagline }}
